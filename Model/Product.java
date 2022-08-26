@@ -1,8 +1,10 @@
-import utils.Category;
+package Model;
+
+import Model.utils.Category;
 public class Product {
     String name, description;
     Double price;
-    Category category;
+    jdk.jfr.Category category;
 
 
     public String getName() {
@@ -43,7 +45,7 @@ public class Product {
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price +
-                ", category=" + category +
+                ", category=" + category.toString() +
                 '}';
     }
 }
