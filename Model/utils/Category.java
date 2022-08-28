@@ -4,6 +4,11 @@ public class Category {
     String name;
     String description;
 
+    public Category(String name, String description) {
+        setName(name);
+        setDescription(description);
+    }
+
     public String getName() {
         return this.name;
     }

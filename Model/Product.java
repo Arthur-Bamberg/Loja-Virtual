@@ -1,11 +1,18 @@
 package Model;
 
 import Model.utils.Category;
+
 public class Product {
     String name, description;
     Double price;
-    jdk.jfr.Category category;
+    Category category;
 
+    public Product(String name, String description, double price, Category category) {
+        setName(name);
+        setDescription(description);
+        setPrice(price);
+        setCategory(category);
+    }
 
     public String getName() {
         return this.name;
